@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Drivinjapan | Service de Traduction Officielle JAF permis de conduire pour le Japon{% endblock %}
+
+{% block body %}
+
+<body>
+    <header class="fixed w-full bg-white" {{ react_component('Header') }}>
+
+	</header>
+	<div class="bg-white">
+		<div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+			<div class="text-center">
+				{# <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Connectez-vous</p>
+				<p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Pour suivre votre demande de traduction</p> #}
+                <section class="bg-white dark:bg-gray-900" {{ react_component('HeroLogin') }}></section>
+                {# <p class="mx-auto mt-5 max-w-xl text-xl text-gray-500">Ceci est une démo de React dans une application Symfony</p> #}
+				{# <div {{ react_component('MyComponent', { 'fullName': 'Ludovic' }) }}></div>#}
+				<div {{ react_component('Modal', {'button': 'Voir information'}) }}></div> 
+			</div>
+		</div>
+	</div>
+    <!-- Component Hero block -->
+{% endblock %}
